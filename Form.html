@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Personal Form</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="My Personal Info">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+  </head>
+  <body>
+    <header>
+      <h1>MY PERSONAL INFO</h1>
+    </header>
+    <main>
+      <form action="" method="post">
+        <label for="name">Fullname: </label>
+        <input type="text" id="name" name="userfullname" required="" placeholder="Please enter your Fullname" maxlength="50" pattern="[A-Za-z]{5,}" title="Username must contain letters only and not less than 5 characters"><br><br>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" value="Ike001 Software Guru" readonly=""><br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="useremail" required="" placeholder="Please enter your email"><br><br>
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="userage" required="" min="1" max="100"><br><br>
+        <p>Select your Gender: </p>
+        <label>
+          <input type="radio" name="gender" value="male">Male
+          <input type="radio" name="gender" value="female">Female
+          <input type="radio" name="gender" value="other">Other<br><br>
+          <label for="country">Country: </label>
+          <select id="country" name="usercountry" required>
+            <option value="" disabled="" selected="">Select your Country</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ng">Nigeria</option>
+            <option value="ca">Canada</option>
+          </select>
+        </label><br><br>
+        <label for="subscribe">Subscribe to Newsletter: 
+          <input type="checkbox" value="yes" name="Subscribe" checked="" id="subscribe">
+        </label><br><br>
+        <p>Other Preferred Contact Method:</p>
+        <label>
+          <input type="radio" name="contact" required="" value="whatsapp">WhatsApp 
+          <input type="radio" name="contact" required="" value="Phone No">Phone No
+        </label><br><br>
+        <button type="submit">Sign Up</button><br><br>
+        <button type="reset">Clear All</button>
+      </form>
+    </main>
+  </body>
+</html>

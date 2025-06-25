@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My IT First Learning Project</title>
+    <meta charset="UTF-8" name="description" content="IT Practice Project">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <!-- My IT Project Page starts here -->
+    <header>
+      <h1 style="color: red;">1ST IT LEARNING PROJECT</h1>
+    <h2 style="color: green;">2ND IT LEARNING PROJECT</h2>
+    <h3 style="color: blue;">3RD IT LEARNING PROJECT</h3>
+    <h4 style="color: yellow;">4TH IT LEARNING PROJECT</h4>
+    <h5>5TH IT LEARNING PROJECT</h5>
+    <h6>6TH IT LEARNING PROJECT</h6>
+    <nav>
+      <a href="About.html">About Me</a><br>
+    <a href="Contact.html">Contact Me</a>
+    </nav>
+    </header>
+    <main>
+      <p>Join me as I journey through FullStack Development</p>
+    <p>This is your <i><u>favourite Web Developer</u></i><br><hr><b><u>Ikechukwu Orji</u></b><hr>currrently in my IT session</p>
+    <p>Here are some of the Special Symbols; &gt;, &lt;, &amp;, &quot;, &apos;, &nbsp;, &copy;</p>
+    <a href="About.html" target="_blank">See more about me here</a><br>
+    <a href="mailto: ikechukwuorji236@gmail.com">Send Email</a><br>
+    <a href="tel: +2349041803780">Call Me</a><br>
+    <a href="Signup.html" class=".btn">Sign Up</a><br>
+    <img src="My Photo.jpg" alt="My photo" height="500px" width="500px" loading="lazy">
+    <ul>My IT Goals
+    <ol>
+      <li>Learn FrontEnd Web Development</li>
+      <li>learn BackEnd Web Development</li>
+      <li>Become a FullStack Web Developer</li>
+    </ol>
+    </ul>
+    <!-- Tables -->
+    <table border="1">
+      <thead>
+        <tr>
+        <th>Name</th>
+        <th>Role</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td>Ikechukwu</td>
+        <td>FrontEnd Developer</td>
+      </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+        <td colspan="2">Personal Info</td>
+      </tr>
+      </tfoot>
+    </table>
+    <br><br>
+    <!-- Forms -->
+    <h2>SIGN UP INFO</h2>
+    <form action="" method="post">
+      <label for="name">My Name: </label>
+      <input type="text" value="Ikechukwu Orji" readonly="" id="name"><br><br>
+      <label for="username">Name: </label>
+      <input type="text" name="username" id="username" required="" placeholder="Enter your name"><br><br>
+      <p>Select Gender: </p>
+      <label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+      </label><br><br>
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="useremail" required="" placeholder="Enter your email"><br><br>
+      <label for="age">Age: </label>
+      <input type="number" id="age" name="userage" min="17" max="100" required=""><br><br>
+      <label for="country">Select Country: </label>
+      <select id="country" name="usercountry" required>
+        <option value="" disabled="" selected="">Select your Country</option>
+        <option value="usa">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ca">Canada</option>
+        <option value="ng">Nigeria</option>
+      </select><br><br>
+      <label>
+        <input type="checkbox" name="subscribe" value="yes">Subscribe to Newsletter
+      </label><br><br>
+      <label for="bio">Quick Intro: </label><br>
+      <textarea id="bio" name="userbio" required="" rows="5" cols="30"></textarea><br><br>
+      <label for="pass">Password: </label>
+      <input type="password" id="pass" name="userpassword" required="" placeholder="Enter your password"><br><br>
+      <button type="submit">Sign Up</button><br>
+      <button type="reset">Clear All</button>
+    </form>
+    <!-- Audio -->
+    <h2>LISTEN TO OUR SONG</h2>
+    <audio controls="" loop="">
+      <source src="song1.mp3" type="audio/mpeg">Your browser doesn't support HTML audio
+    </audio><br><br>
+    <!-- Video -->
+    <video controls="" loop="" autoplay="" muted="">
+      <source src="video1.mp4" type="video/mp4">Your browser doesn't support HTML video
+    </video><br><br>
+    <video controls="" loop="" autoplay="" muted="">
+      <source src="video2.mp4" type="video/mp4">
+    </video><br><br>
+    <!-- Iframe -->
+    <iframe src="My Photo.jpg"></iframe>
+    </main>
+  </body>
+</html>
