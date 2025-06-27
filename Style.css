@@ -1,8 +1,45 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: teal;
+  background-image: url('/photo1.png');
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-family: Georgia, Arial;
+  color: red;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  margin: 50px;
+  border: 5px, solid, blue;
+  border-radius: 20px;
+}
+
+h1:hover {
+  color: blue;
+}
+
+h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: yellow;
+}
+
+input, select {
+  color: blue;
+  outline: none;
 }
