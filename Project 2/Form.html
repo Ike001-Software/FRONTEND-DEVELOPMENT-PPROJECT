@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Login Page Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="FormStyle.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">BORCELLE</h1>
+    <nav>
+      <ul>
+        <li><a href="About.html" target="">ABOUT</a></li>
+        <li><a href="Contact.html" target="">CONTACT</a></li>
+        <li><a href="Shop.html" target="">SHOP</a></li>
+        <li><a href="Signup.html" target="">SIGN UP</a></li>
+      </ul>
+    </nav>
+  </header> 
+  <main>
+    <form action="" method="post">
+      <h1 class="account">Create Account</h1>
+      <div class="form">
+        <input type="text" id="name" name="username" placeholder="Your Name" required="" pattern="[A-Za-z]{5,}" title="Username must contain minimum of 5 letters only"><br><br>
+      <input type="email" id="email" name="useremail" placeholder="Your Email Addresss"><br><br>
+      <input type="password" id="password" name="userpassword" placeholder="Your Password" required=""><br><br>
+      <div class="check"><input type="checkbox" class="checkbox" value="yes" required=""><div class="text">I agree to the Terms and Conditions</div></div><br><br>
+      <div class="button">
+        <button type="submit" class="signup">Sign Up</button><br><br>
+      <button type="submit">Login</button>
+      </div>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

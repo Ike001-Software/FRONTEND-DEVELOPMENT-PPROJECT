@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/photo1.png');
+  background-size: cover;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5.5rem;
+  background-color: #ffe9ea;
+  color: #700386;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 2.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #700386;
+}
+
+.title {
+  font-family: Georgia, Times New Roman;
+  font-size: ;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.account {
+  font-family: Times New Roman, Tahoma;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  margin-top: 1rem;
+}
+
+input {
+  height: 3.5rem;
+  width: 24.5rem;
+  border-radius: 1.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.checkbox {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.text {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.check {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  height: 3.5rem;
+  width: 10rem;
+  border-radius: 1.75rem;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.signup {
+  background-color: white;
+  color: #700386;
+  height: 3.5rem;
+  width: 10rem;
+  border-radius: 1.75rem;
+  border: none;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+}
