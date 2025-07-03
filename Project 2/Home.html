@@ -5,35 +5,90 @@
   <meta name="description" content="Homepage Design Template">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="HomeStyle.css">
   <title>Homepage</title>
 </head>
 <body>
-  <header>
-    <h1>IYKE</h1>
-    <ul>
-      <li><a href="" target="">Appointment</a></li>
-      <li><a href="" target="">Doctor</a></li>
-      <li><a href="" target="">Message</a></li>
-      <li><a href="" target="">Payment</a></li>
-      <li><a href="" target="">Settings</a></li>
-      <li><a href="" target="">My Account</a></li>
-      <li><a href="" target="">Sign Out</a></li>
-      <li><a href="" target="">Help</a></li>
+  <header class="first-column">
+    <div class="title">
+      <div class="logo"></div>
+    <h1 class="owner">IYKE</h1>
+    </div>
+    <ul class="tabs">
+      <div class="workspace">
+        <li><a href="" target="" class="dashboard-container"><div class="dashboard"></div>Dashboard</a></li>
+        <li><a href="" target="" class="appointment-container"><div class="appointment"></div>Appointment</a></li>
+      <li><a href="" target="" class="doctor-container"><div class="doctor"></div>Doctor</a></li>
+      <li><a href="" target="" class="message-container"><div class="message"></div>Message</a></li>
+      <li><a href="" target="" class="payment-container"><div class="payment"></div>Payment</a></li>
+      <li><a href="" target="" class="settings-container"><div class="settings"></div>Settings</a></li>
+      </div>
+      <div class="personal">
+        <li><a href="" target="" class="account-container"><div class="account"></div>My Account</a></li>
+      <li><a href="LoginForm.html" target="" class="signout-container"><div class="signout"></div>Sign Out</a></li>
+      </div>
+      <div class="help">
+        <li><a href="" target="" class="help-container"><div class="help-icon"></div>Help</a></li>
+      </div>
     </ul>
   </header>
-  <main>
-    <form action="" method="get">
+  <main class="second-column">
+      <form action="" method="get">
       <input type="search" name="query" placeholder="Search Here..">
     </form>
-    <h1>Comprehensive Health Service Offered Here</h1>
+    <div class="menu1-container">
+      <div class="menu1">
+      <h1 class="service">Comprehensive <br> Health Service <br> Offered Here</h1>
     <ul>
-      <li><a href="" target="">Get Started</a>
-      <li><a href="" target="">Learn More</a></li>
+      <div class="menu1-link">
+        <li class="menu1-links"><a href="" target="" class="get-started">Get Started</a>
+      <li class="menu1-links"><a href="" target="" class="learn-more">Learn More</a></li>
+      </div>
     </ul>
-    <h2>Feature</h2>
-    <a href="" target="">See More</a>
-    <h2>Nearby Hospital</h2>
-    <a href="" target="">See More</a>
+    </div>
+    <div class="image"></div>
+    </div>
+    <div class="menu2">
+      <h2>Feature</h2>
+    <a href="" target="" class="see-more">See More</a>
+    </div>
+    <ul class="features">
+      <li><a href="" target="" class="hospital-image-container"><div class="hospital-image"></div>Hospital</a></li>
+      <li><a href="" target="" class="doctor-image-container"><div class="doctor-image"></div>Doctor</a></li>
+      <li><a href="" target="" class="laboratory-image-container"><div class="laboratory-image"></div>Laboratory</a></li>
+      <li><a href="" target="" class="pharmacy-image-container"><div class="pharmacy-image"></div>Pharmacy</a></li>
+      <li><a href="" target="" class="insurance-image-container"><div class="insurance-image"></div>Insurance</a></li>
+    </ul>
+    <div class="location">
+      <h2>Nearby Hospital</h2>
+    <a href="" target="" class="see-more">See More</a>
+    </div>
+  </main>
+  <main class="third-column">
+      <a href="" target="" class="my-pic-container">Ikechukwu Orji<div class="my-pic"></div></a>
+    <h2 class="schedule">Schedule</h2>
+    <div class="dates">
+      <div class="first-date">
+        <p>2025 July</p>
+        <p class="no">01</p>
+        <p>Surgery</p>
+      </div>
+      <div class="second-date">
+        <p>2025 July</p>
+        <p class="no">03</p>
+        <p>Therapy</p>
+      </div>
+    </div>
+    <h2>Appointment</h2>
+    <p>Lifestyle Counseling</p>
+    <p>Dr Claude Alvis</p>
+    <p>Rehabilitation</p>
+    <p>Dr. Claude Alvis</p>
+    <p>Preventive Care</p>
+    <p>Dr. Claude Alvis</p>
+    <h2>Message</h2>
+    <p>Dr. Alfredo Torres</p>
+  </main>
   </main>
 </body>
 </html>

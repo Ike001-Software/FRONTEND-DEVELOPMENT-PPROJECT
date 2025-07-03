@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: 100vh;
+  background-color: white;
+}
+
+.first-column, .second-column, .third-column {
+  padding: 2.25rem 1.25rem;
+}
+
+.first-column {
+  grid-column: 1;
+  
+}
+
+.title {
+  display: flex;
+  gap: 0.625rem;
+  align-items: flex-start;
+}
+
+.logo {
+  height: 1.8rem;
+  width: 1.78rem;
+  background-image: url('/logo2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.owner {
+  font-family: Times New Roman, Georgia;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #2ecac8;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: flex-start;
+  height: 100vh;
+  list-style: none;
+  margin-top: 3.6rem;
+}
+
+.workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dashboard-container {
+  display: flex;
+  gap: 0.56rem;
+  align-items: center;
+}
+
+.dashboard {
+  height: 1.12rem;
+  width: 0.88rem;
+  background-image: url('/icon1.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.appointment-container {
+  display: flex;
+  gap: 0.56rem;
+  align-items: center;
+}
+
+.appointment {
+  height: 1.12rem;
+  width: 0.88rem;
+  background-image: url('/icon2.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.doctor-container {
+  display: flex;
+  gap: 0.56rem;
+  align-items: center;
+}
+
+.doctor {
+  height: 1.12rem;
+  width: 0.88rem;
+  background-image: url('/icon3.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.message-container {
+  display: flex;
+  gap: 0.56rem;
+  align-items: center;
+}
+
+.message {
+  height: 1.12rem;
+  width: 0.88rem;
+  background-image: url('/icon4.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.payment-container {
+  display: flex;
+  gap: 0.56rem;
+  align-items: center;
+}
+
+.payment {
+  height: 1.12rem;
+  width: 0.88rem;
+  background-image: url('/icon5.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.settings-container {
+  display: flex;
+  gap: 0.56rem;
+  align-items: center;
+}
+
+.settings {
+  height: 1.12rem;
+  width: 0.88rem;
+  background-image: url('/icon6.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.account-container {
+  display: flex;
+  gap: 0.56rem;
+  align-items: center;
+}
+
+.account {
+  height: 1.12rem;
+  width: 0.88rem;
+  background-image: url('/icon7.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.signout-container {
+  display: flex;
+  gap: 0.56rem;
+  align-items: center;
+}
+
+.signout {
+  height: 1.12rem;
+  width: 0.88rem;
+  background-image: url('/icon8.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.help-container {
+  display: flex;
+  gap: 0.56rem;
+  align-items: center;
+}
+
+.help-icon {
+  height: 1.12rem;
+  width: 0.88rem;
+  background-image: url('/icon9.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.second-column {
+  grid-column: 2;
+  background-color: #fafafa;
+} 
+
+input {
+  height: 3rem;
+  width: 35rem;
+  border-radius: 1.5rem;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.menu1-container {
+  height: 15.5rem;
+  width: 42rem;
+  border-radius: 2rem;
+  background: linear-gradient(to bottom, #2ecac8 90%, black 100%);
+  margin-top: 2.5rem;
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.service {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.menu1-link {
+  display: flex;
+  gap: 0.56rem;
+}
+
+.menu1-links {
+  list-style: none;
+}
+
+.get-started {
+  height: 1.6rem;
+  width: 7rem;
+  border-radius: 0.8rem;
+  font-size: 0.8rem;
+  color: #2ecac8;
+  background-color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn-more {
+  height: 1.6rem;
+  width: 7rem;
+  border-radius: 0.8rem;
+  font-size: 0.8rem;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 13rem;
+  width: 18rem;
+  background-image: url('/img1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.menu2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+  align-items: center;
+}
+
+.see-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.6rem;
+  width: 6rem;
+  border-radius: 0.8rem;
+  background: linear-gradient(to bottom, #2ecac8 90%, black 10%);
+  color: white;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.hospital-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.56rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hospital-image {
+  height: 5rem;
+  width: 5rem;
+  background-image: url('/img2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.doctor-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.56rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-image {
+  height: 5rem;
+  width: 5rem;
+  background-image: url('/img3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.laboratory-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.56rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.laboratory-image {
+  height: 5rem;
+  width: 5rem;
+  background-image: url('/img4.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pharmacy-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.56rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.pharmacy-image {
+  height: 5rem;
+  width: 5rem;
+  background-image: url('/img5.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.insurance-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.56rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.insurance-image {
+  height: 5rem;
+  width: 5rem;
+  background-image: url('/img6.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 1.5rem;
+}
+
+.third-column {
+  grid-column: 3;
+}
+
+.my-pic-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-pic {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-image: url('/img7.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.schedule {
+  font-size: 1.18rem;
+  margin-top: 3rem;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.25rem 0rem;
+}
+
+.first-date {
+  height: 6rem;
+  width: 5.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom, #2ecac8 90%, black 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.second-date {
+  height: 6rem;
+  width: 5.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom, #2ecac8 90%, black 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.no {
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: Arial;
+}
