@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/bimage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 3rem 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: yellow;
+}
+
+ul {
+  display: flex;
+  gap: 1.25rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

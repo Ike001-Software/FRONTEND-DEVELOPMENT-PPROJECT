@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/bimage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 3rem 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: yellow;
+}
+
+ul {
+  display: flex;
+  gap: 1.25rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  height: 28rem;
+  width: 22rem;
+  border-radius: 1rem;
+  background: red;
+  margin: 2rem 1rem;
+  padding: 1.7rem 0.7rem;
+}
+
+h2 {
+  text-align: center;
+  color: yellow;
+  font-size: 2rem;
+}
+
+label {
+  color: yellow;
+}
+
+.form-details {
+  margin-top: 1.8rem;
+}
+
+.form-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  height: 2.5rem;
+  width: 20.3rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  border: none;
+}
+
+.password {
+  width: 10rem;
+}

@@ -111,5 +111,19 @@ console.log(school.name);
 
 for (let key in school) {
   console.log(key);
-  console.log(user["key"]);
+  console.log(school[key])
 }
+
+// Array of Objects
+let churches = [
+  {name: "Deeper Life", location: "Lagos"},
+  {name: "Catholic", location: "Rome"}
+  ];
+  
+  console.log(churches[0].location);
+  
+  // Date & Time
+  const now = new Date();
+  console.log(now);
+  
+  console.log(now.getFullYear());
