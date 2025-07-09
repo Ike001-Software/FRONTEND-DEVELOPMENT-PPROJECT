@@ -8,7 +8,7 @@ body {
   background-image: url('/bimage.png');
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 3rem 2rem;
+  margin: 2.5rem 2rem;
 }
 
 header {
@@ -32,4 +32,96 @@ ul li {
 a {
   text-decoration: none;
   color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 1rem;
+  background: #0b0522;
+  margin: 2rem 1rem;
+  padding: 1.7rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  color: yellow;
+  font-size: 2rem;
+}
+
+label {
+  color: yellow;
+}
+
+.form-details {
+  margin-top: 1.8rem;
+}
+
+.form-reminder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23.6rem;
+  margin-top: -1.5rem;
+  gap: 3.7rem;
+  margin-left: 0.7rem;
+}
+
+input {
+  height: 2.3rem;
+  width: 23.6rem;
+  border-radius: 1.15rem;
+  padding: 1rem;
+  border: none;
+  background: #f9fafa;
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  height: 0.8rem;
+  width: 0.8rem;
+  cursor: pointer;
+}
+
+.checkbox-text {
+  font-size: 0.7rem;
+}
+
+.f-password {
+  color: yellow;
+  font-size: 0.7rem;
+}
+
+button {
+  height: 2.3rem;
+  width: 14.2rem;
+  border-radius: 1.15rem;
+  position: center;
+  background: linear-gradient(to right, yellow 10%, #743e05 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.signup {
+  margin-top: -2rem;
+  font-size: 0.7rem;
+  color: yellow;
 }

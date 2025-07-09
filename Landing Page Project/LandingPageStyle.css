@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/background-img3.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 1.5rem;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background-image: url('/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.8rem;
+  width: 2.5rem;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.start {
+  font-weight: 700;
+  height: 2.5rem;
+  width: 9rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home Section Design */
+.home-head-container {
+  display: flex;
+}
+
+.home-head {
+  padding-top: 6rem;
+}
+
+.first-message {
+  font-size: 5.5rem;
+  width: 50rem;
+}
+
+.second-message {
+  font-size:1.3rem;
+  font-weight: 600;
+  width: 45rem;
+  margin-top: 0.5rem;
+}
+
+.start-btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.7rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  background: yellow;
+  color: #0c5192;
+}
+
+.simple-step {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-head-image {
+  height: 44rem;
+  width: 38rem;
+  background-image: url('/img 1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.step-1-img-container, .step-2-img-container, .step-3-img-container {
+  justify-items: center;
+  height: 28rem;
+  margin: 0 0.5rem;
+}
+
+.step-1-img-container {
+  grid-column: 1;
+  height: 28rem;
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.step-1-img {
+  height: 23rem;
+  width: 21rem;
+  background-image: url('/img 6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.step-1 {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+  color: #0c5192;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.step-2-img-container {
+  grid-column: 2;
+  height: 28rem;
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.step-2-img {
+  height: 23rem;
+  width: 21rem;
+  background-image: url('/img 5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.step-2 {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+  color: #0c5192;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.step-3-img-container {
+  grid-column: 3;
+  height: 28rem;
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.step-3-img {
+  height: 23rem;
+  width: 21rem;
+  background-image: url('/img 4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.step-3 {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+  color: #0c5192;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.steps {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+/* Features Section */
+h2 {
+  font-size: 2.5rem;
+}
+
+.features-section, .whyus-section, .about-section, .pricing-section, .faqs-section, .contact-section {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.cta-text {
+  font-size: 1.3rem;
+}

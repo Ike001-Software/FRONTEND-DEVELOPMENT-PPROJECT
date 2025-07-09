@@ -21,12 +21,25 @@
   <main>
     <form action="" method="post">
       <h2> Log in</h2>
-      <input type="text" id="username" name="username" required="" placeholder="Username"><br><br>
-      <input type="password" id="userpassword" name="userpassword" required="" placeholder="Password"><br><br>
-      <input type="checkbox" value="true">Keep Me Logged In<br><br>
-      <a href="" target="">Forgot Password?</a><br><br>
+      <div class="form-details">
+        <div class="user-container">
+          <div class="user-icon"></div>
+        <input type="text" id="username" name="username" required="" placeholder="Username">
+        </div><br><br>
+        <div class="password-container">
+          <div class="password-icon"></div>
+        <input type="password" id="userpassword" name="userpassword" required="" placeholder="Password">
+        </div><br><br>
+      </div>
+      <div class="form-reminder">
+        <label class="checkbox-label">
+          <input type="checkbox" value="true" class="checkbox">
+          <span class="checkbox-text">Keep Me Logged In</span>
+        </label><br><br>
+        <a href="" target="" class="f-password">Forgot Password?</a><br><br>
+      </div>
       <button type="submit">Start Work</button><br><br>
-      <a href="SignUp.html" target="">Or Sign up</a>
+      <a href="SignUp.html" target="" class="signup">Or Create Account With Us</a>
     </form>
   </main>
 </body>

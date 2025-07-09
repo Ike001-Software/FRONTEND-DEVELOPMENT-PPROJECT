@@ -8,7 +8,7 @@ body {
   background-image: url('/bimage.png');
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 3rem 2rem;
+  margin: 2.5rem 2rem;
 }
 
 header {
@@ -42,11 +42,15 @@ main {
 
 form {
   height: 28rem;
-  width: 22rem;
+  width: 25rem;
   border-radius: 1rem;
-  background: red;
+  background: #0b0522;
   margin: 2rem 1rem;
   padding: 1.7rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -66,17 +70,35 @@ label {
 .form-password {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 1.2rem;
 }
 
 input {
-  height: 2.5rem;
-  width: 20.3rem;
-  border-radius: 1.5rem;
+  height: 2.3rem;
+  width: 23.6rem;
+  border-radius: 1.15rem;
   padding: 1rem;
   border: none;
+  background: #f9fafa;
 }
 
 .password {
-  width: 10rem;
+  width: 11rem;
+}
+
+button {
+  height: 2.3rem;
+  width: 14.2rem;
+  border-radius: 1.15rem;
+  position: center;
+  background: linear-gradient(to right, yellow 10%, #743e05 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.login {
+  margin-top: -2rem;
+  font-size: 0.7rem;
+  color: yellow;
 }
