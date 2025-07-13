@@ -6,47 +6,45 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Slideshow Effect on Home Image
-// const slides = document.querySelector(".home-slides");
-// const slide = document.querySelectorAll(".home-slide");
-// let index = 0;
-// const totalSlides = slide.length;
-// const slideWidth = 100;
-// let interval;
+// Code to Animate the Slides
+const slidesContainer = document.querySelector('.home-slides');
+const slides = document.querySelectorAll('.home-slide');
+let currentIndex = 0;
 
-// function goToSlide(i) {
-//   slide.style.transform = "translateX(-${i * slideWidth}%)";
-// }
+// Clone the first slide and add to the end
+const firstClone = slides[0].cloneNode(true);
+slidesContainer.appendChild(firstClone);
 
-// function startSlide() {
-//   interval = setInterval(() => {
-//     index++;
-//     goToSlide(index);
+let totalSlides = document.querySelectorAll('.home-slide').length;
 
-//     // Reset to first slide when it reaches the cloned one
-//     if (index === totalSlides - 1) {
-//       setTimeout(() => {
-//         slides.style.transition = 'none'; // disable transition temporarily
-//         index = 0;
-//         goToSlide(index);
-//         // Force reflow to reset transition
-//         void slides.offsetWidth;
-//         slides.style.transition = 'transform 0.5s ease-in-out';
-//       }, 500); // wait for slide transition to finish
-//     }
-//   }, 2000); // change every 2 seconds
-// }
+function goToSlide(index) {
+  slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+  currentIndex = index;
+}
 
-// function stopSlide() {
-//   clearInterval(interval);
-// }
+// Start the transition
+function startSlide() {
+  currentIndex++;
+  goToSlide(currentIndex);
 
-// // Manual Slide on Click
-// slides.addEventListener('click', () => {
-//   stopSlide(); // optional: stop auto when clicked
-//   index++;
-//   if (index >= totalSlides - 1) index = 0;
-//   goToSlide(index);
-// });
+  if (currentIndex === totalSlides - 1) {
+    // Wait for the transition to finish
+    setTimeout(() => {
+      // Remove transition temporarily
+      slidesContainer.style.transition = 'none';
 
-// startSlide();
+      // Instantly go back to real first slide
+      goToSlide(0);
+      currentIndex = 0;
+
+      // Let the browser process the instant jump before restoring transition
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+        });
+      });
+    }, 500); // Must match transition duration
+  }
+}
+
+setInterval(startSlide, 3000);

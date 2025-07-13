@@ -4,9 +4,41 @@
     <title>About Section</title>
     <meta name="description" content="My About Section">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="About.css">
   </head>
   <body>
-    <h1>ABOUT ME</h1>
-    <p>I'm <strong>Ikechukwu</strong>. I think it's all you need to know for now</p>
+    <header>
+      <h1>ABOUT ME</h1>
+    </header>
+    <main>
+      <p>I'm <strong>Ikechukwu</strong>. I think it's all you need to know for now</p>
+      <div class="carousel">
+        <div class="slides">
+          <div class="img1 slide"></div>
+          <div class="img2 slide"></div>
+        </div>
+      </div>
+      <div class="faq-box">
+        <p class="question">What inspired your journey in tech?</p>
+        <div class="answer">
+          <p>Ever since I was little, I've always admired tech innovations; robots, electric cars which are self movable, automated doors and more that you can name. I admired robotics and the scientific knowledge behind them. I did my research as a young lad then and looks like I was told that these things were developed by scientists. For sometime, I desired to become a scientist. Follow me to know more... </p>
+        </div>
+      </div>
+      <form action="" method="post">
+        <label for="Task:">Today's Task</label>
+        <input type="text" id="task" name="usertask">
+        <button type="submit" class="add-task">Add Task</button>
+      </form>
+      <ul class="task-list"></ul>
+      <div class="msg-box">
+        <button type="button" class="msg-btn">Click to See What's Inside</button>
+        <div class="msg">
+          <p>Let me tell you Something: Come closer.<br><br>
+        So currently, I'm learning and mastering JavaScript and trust me, it's not so easy, but of course, I'm equal to the task.<br>
+        I'm improved a lot compareed to my first time; at least I understand to a very great extent a JavaScript code for FrontEnd. Stick with me guys!!</p>
+        </div>
+      </div>
+    </main>
+    <script src="About.js"></script>
   </body>
 </html>

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-size: 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 25rem;
+  border-radius: 0.5rem;
+  background: green;
+  font-size: 2rem;
+}
+
+h1:hover {
+  background: white;
+  color: red;
+}
+
+.carousel {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.img1, .img2 {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img1 {
+  background-image: url('/img2.jpg');
+}
+
+.img2 {
+  background-image: url('/img1.jpg');
+}
+
+.faq-box {
+  width: 50rem;
+  overflow: hidden;
+  background: green;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-box.open .answer {
+  max-height: 30rem;
+}
+
+ul {
+  height: auto;
+  width: 25rem;
+  padding: 2rem;
+  background: green;
+}
+
+.msg-box {
+  margin-top: 1.5rem;
+  height: auto;
+  width: 25rem;
+  border-radius: 0.5rem;
+  background: green;
+  padding: 0.5rem;
+}
+
+.msg-btn {
+  height: 2.5rem;
+  width: auto;
+  border-radius: 1.25rem;
+  border: none;
+  padding: 0.5rem;
+  background: white;
+  color: green;
+  cursor: pointer;
+}
+ .msg-btn:hover {
+   background: blue;
+   color: white;
+ }
+ 
+ .msg {
+   max-height: 0;
+   overflow: hidden;
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ .msg-box.open .msg{
+   max-height: 25rem;
+ }
