@@ -90,6 +90,7 @@ h1:hover {
 ul {
   height: auto;
   width: 25rem;
+  border-radius: 0.5rem;
   padding: 2rem;
   background: green;
 }
@@ -126,4 +127,8 @@ ul {
  
  .msg-box.open .msg{
    max-height: 25rem;
+ }
+ 
+ .my-task {
+   margin-top: 2rem;
  }

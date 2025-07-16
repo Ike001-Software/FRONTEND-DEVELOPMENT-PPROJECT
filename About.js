@@ -127,15 +127,92 @@ msgBtn.addEventListener("click", () => {
     msgBtn.textContent = "Click to See What's Inside"
   }
 });
-
-
-
-
-
-
-
 // 6. I wanted to improve interactivity by ensuring that this same thing I mentioned can be triggered by just clicking on the box alone.
 // Do you agree?
+
+// Add/Remove Task
+// 1. User sees an input space to type in whatever task he or she has.
+// 2. An Add Task button is also visible beside the input space.
+let myInput = document.querySelector(".my-input");
+let addMyTask = document.querySelector(".task-btn");
+let myTaskList = document.querySelector(".mytask-list");
+// 3. When the user clicks, the add task button, the task is added in a box visible to the user.
+addMyTask.addEventListener("click", () => {
+  // 3.1. An element is created to store the value
+  let myNewTask = document.createElement("li");
+  // 3.2. A variable to store the value of the input
+  let newInput = myInput.value;
+  // The element to collect and store the variable
+  // First store text in a span container
+  let currentTaskText = document.createElement("span");
+  // Set the content of this element to store the variable
+  currentTaskText.textContent = newInput;
+  // Append to the list container
+  myNewTask.appendChild(currentTaskText);
+  
+  myTaskList.appendChild(myNewTask);
+  // 4. The user can edit and delete each task as they want as there are edit and delete buttons attached to each task.
+  // Declaring and Creating the Delete Task Button
+  let deleteMyTask = document.createElement("button");
+  deleteMyTask.textContent = "Delete";
+  // Clicking the Delete Button
+  deleteMyTask.addEventListener("click", () => {
+    myNewTask.remove();
+  });
+  // Declaring and Creating the Edit Task Button
+  let editMyTask = document.createElement("button");
+  editMyTask.textContent = "Edit";
+  // Clicking the Edit Button
+  editMyTask.addEventListener("click", () => {
+    // Store current task
+    let currentTask = currentTaskText.textContent;
+    // Delete the task item display
+    currentTaskText.innerHTML = "";
+    // Create an input and set it's value to the Current task
+    myEditInput = document.createElement("input");
+    myEditInput.type = "text";
+    myEditInput.value = currentTask;
+    // Creating Save Button
+    let saveMyInput = document.createElement("button");
+    saveMyInput.textContent = "Save";
+    // Creating Cancel Button
+    let cancelMyInput = document.createElement("button");
+    cancelMyInput.textContent = "Cancel";
+    // Clicking the Save Button
+    saveMyInput.addEventListener("click", () => {
+      currentTaskText.textContent = myEditInput.value
+      // Making the Delete and Edit Buttons visible again
+      deleteMyTask.style.display = "inline";
+      editMyTask.style.display = "inline";
+    });
+    // Clicking the Cancel Button
+    cancelMyInput.addEventListener("click", () => {
+      // Restore the Original State
+      currentTaskText.textContent = currentTask;
+      currentTaskText.appendChild(deleteMyTask);
+      currentTaskText.appendChild(editMyTask);
+      // Make the Buttons visible again
+      editMyTask.style.display = "inline";
+      deleteMyTask.style.display = "inline";
+    });
+    // Appending All Elements Created which are Input, Save & Cancel Buttons
+    currentTaskText.appendChild(myEditInput);
+    currentTaskText.appendChild(saveMyInput);
+    currentTaskText.appendChild(cancelMyInput);
+    // Removing the Delete and Edit Buttons at the Point of Editing
+    deleteMyTask.style.display = "none";
+    editMyTask.style.display = "none";
+  });
+  // Attaching the Delete and Edit buttons to each task
+  myNewTask.appendChild(deleteMyTask);
+  myNewTask.appendChild(editMyTask);
+  // 5. In the task box, there is a search bar that enables a user to serach for their task.
+  myInput.value = "";
+});
+
+
+
+// Once a task is searched for and selected, it can be edited or deleted.
 
 
 
