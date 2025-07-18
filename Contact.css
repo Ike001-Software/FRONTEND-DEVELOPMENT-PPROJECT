@@ -1,0 +1,92 @@
+/* ✅ Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ✅ Section styles (one per page view) */
+.section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+/* ✅ Distinct section backgrounds */
+.section-1 {
+  background-color: #0f172a; /* Deep Indigo */
+}
+
+.section-2 {
+  background-color: #3b0764; /* Dark Purple */
+}
+
+.section-3 {
+  background-color: #082f49; /* Midnight Blue */
+}
+
+/* ✅ Bubble container (fixed behind everything) */
+.bubble-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ✅ Bubble design */
+.bubble {
+  position: absolute;
+  bottom: 100%;
+  background: radial-gradient(circle at 30% 30%, #fff, #9f7aea, #38bdf8); /* default */
+  border-radius: 50%;
+  pointer-events: none;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  box-shadow: 0 0 10px rgba(159, 122, 234, 0.5);
+  opacity: 0.9;
+}
+
+/* ✅ Falling animation */
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(110vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Force each section to fill full screen height with enough space */
+.section {
+  min-height: 100vh;
+  height: 100vh; /* ✅ Makes it 100% of screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  font-size: 2.5rem;
+  padding: 2rem;
+  font-weight: bold;
+}
